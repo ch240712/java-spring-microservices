@@ -77,44 +77,44 @@ Tech used:
 
 Run application in following order:
 
-Docker agent (e.g., Docker Desktop)
-shop-db and auth-service-db (Docker settings below)
-EurekaService
-AuthService
-ApiGateway
-CartService
-ProductService
+- Docker agent (e.g., Docker Desktop)
+- shop-db and auth-service-db (Docker settings below)
+- EurekaService
+- AuthService
+- ApiGateway
+- CartService
+- ProductService
 
 Settings:
 
 PostgreSQL Docker settings for shop database:
 
-Name: shop-db
-Server: Docker
-Image ID or name: postgres: 18.0
-Container name: shop-db
-Bind ports: 5000:5432
-Bind mounts:
-- Host path: C:/<local_folder>/db_volumes/shop-db
-- Container path: /var/lib/postgresql/18/docker
-  Environment Variables:
-  POSTGRES_DB=db
-  POSTGRES_PASSWORD=password
-  POSTGRES_USER=admin_user
-  Run options: --network internal
+- Name: shop-db
+- Server: Docker
+- Image ID or name: postgres: 18.0
+- Container name: shop-db
+- Bind ports: 5000:5432
+- Bind mounts:
+  - Host path: C:/<local_folder>/db_volumes/shop-db
+  - Container path: /var/lib/postgresql/18/docker
+- Environment Variables:
+  - POSTGRES_DB=db
+  - POSTGRES_PASSWORD=password
+  - POSTGRES_USER=admin_user
+- Run options: --network internal
 
 PostgreSQL Docker settings for auth database:
 
 Same setting as above except for:
 
-Name: auth-service-db
-Container name: auth-service-db
-Bind ports: 5001:5432
-Bind mounts:
-- Host path: C:/<local_folder>/db_volumes/auth-service-db
-- Container path: /var/lib/postgresql/18/docker
+- Name: auth-service-db
+- Container name: auth-service-db
+- Bind ports: 5001:5432
+- Bind mounts:
+  - Host path: C:/<local_folder>/db_volumes/auth-service-db
+  - Container path: /var/lib/postgresql/18/docker
 
 Auth Service Java module:
 
 Environment Variables:
-JWT_SECRET=a-string-secret-at-least-256-bits-long
+- JWT_SECRET=a-string-secret-at-least-256-bits-long
