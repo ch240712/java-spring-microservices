@@ -21,7 +21,7 @@ With body:
 Response:
 
 {
-    "token": "<token>"
+    "token": "a-token-string"
 }
 
 2) Use JWT token in HTTP Authorization Bearer header to authenticate client request to get shopping cart items for given customer.
@@ -32,7 +32,7 @@ GET http://localhost:4002/api/cart/223e4567-e89b-12d3-a456-426614174008
 
 With headers:
 
-Authorization Bearer <token>
+Authorization Bearer a-token-string
 
 Response:
 
@@ -105,7 +105,7 @@ PostgreSQL Docker settings for shop database:
 
 PostgreSQL Docker settings for auth database:
 
-Same setting as above except for:
+Same settings as above except for:
 
 - Name: auth-service-db
 - Container name: auth-service-db
@@ -117,4 +117,5 @@ Same setting as above except for:
 Auth Service Java module:
 
 Environment Variables:
+
 - JWT_SECRET=a-string-secret-at-least-256-bits-long
