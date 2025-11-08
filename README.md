@@ -61,19 +61,19 @@ Response:
 
 Tech used:
 
-IntelliJ IDEA with Maven
-Docker Desktop
-Apidog
-pgAdmin 4
-Spring Boot microservices
-Spring Cloud API gateway
-Spring Security and Jason Web Token
-Spring Data JPA
-PostgreSQL database (from Docker Hub)
-springdoc-openapi for API documentation (supports Swagger-ui)
-Eureka Service Discovery
-Resilience4j circuit breaker fault tolerance
-JUnit and REST Assured integration tests
+- IntelliJ IDEA with Maven
+- Docker Desktop
+- Apidog
+- pgAdmin 4
+- Spring Boot microservices
+- Spring Cloud API gateway
+- Spring Security and Jason Web Token
+- Spring Data JPA
+- PostgreSQL database (from Docker Hub)
+- springdoc-openapi for API documentation (supports Swagger-ui)
+- Eureka Service Discovery
+- Resilience4j circuit breaker fault tolerance
+- JUnit and REST Assured integration tests
 
 Run application in following order:
 
