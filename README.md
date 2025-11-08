@@ -61,7 +61,7 @@ Response:
 
 Tech used:
 
-- IntelliJ IDEA with Maven
+- IntelliJ IDEA with Maven, Java 21
 - Docker Desktop
 - Apidog
 - pgAdmin 4
@@ -119,3 +119,4 @@ Auth Service Java module:
 Environment Variables:
 
 - JWT_SECRET=a-string-secret-at-least-256-bits-long
+
